@@ -1,19 +1,19 @@
 ![GitHub Actions imagem cabeçalho](./img/image.png)
 
-# Trabalhando com GitHub Actions
+# Introdução
 
-Este repositório tem como objetivo proporcionar uma introdução a plataforma e conceitos do Github Actions.
+O GitHub a um bom tempo tem sido popularmente a maior ferramenta de hospedagem de código gratuita na internet. Uma feature muito interessante é o GitHub Actions, permitindo automatizar fluxos de build e deploy sem a necessidade de integração com outras plataformas (Azure DevOps, Jenkins, CircleCI).
 
-## Entendendo GitHub Actions
+Outro ponto é a capacidade de usar os próprios agentes do GitHub, eliminando a necessidade de criar ambientes personalizados para executar nossos fluxos de CI/CD. Isso acelera a configuração e execução dos workflows, além de reduzir os custos de implantação, já que a infraestrutura necessária está pronta para uso.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+## GitHub Actions: O que é?
 
-### O que é GitHub Actions 
+GitHub Actions é uma popular plataforma de integração contínua e entrega contínua (CI/CD). Com isso, desenvolvedores podem programar tarefas repetitivas enquanto reduzem a intervenção manual.
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+GitHub Actions é montada em cima de um arquivo YAML, descrevendo assim diferentes etapas do workflow. Estas etapas (steps) incluem rodar um script, testar, fazer um deploy ou mandar notificações.
 
 ### Componentes do GitHub Actions
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Como trata-se de uma plataforma de CI/CD, a mesma é formada por alguns componentes descritos na documentação, sendo eles:
 
  - Workflow: ;
  - Events: ;
@@ -60,3 +60,11 @@ Dois mini projetos foram criados para simular o fluxo de desenvolvimento e testa
  - [Heroku](https://dashboard.heroku.com/);
  - [Railway](https://railway.app/);
  - [Prisma](https://www.prisma.io/);
+
+ ### Membros da atividade
+
+- André Luiz Rabello da Silva;
+- Everton Henrique Oliveira Kunz;
+- João André Ferreira de Almeida;
+- Pedro Henrique Veloso de Melo;
+- Thiago Nascimento da Silva;
