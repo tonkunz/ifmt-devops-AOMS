@@ -15,15 +15,15 @@ GitHub Actions é montada em cima de um arquivo YAML, descrevendo assim diferent
 ### Componentes do GitHub Actions
 Como trata-se de uma plataforma de CI/CD, a mesma é formada por alguns componentes descritos na documentação, sendo eles:
 
- - Workflow: ;
- - Events: ;
- - Jobs: ;
- - Action: ;
- - Runner: ;
+ - **Workflow**: É onde vamos descrever todo o processo de automação para podermos compilar, testar e fazer deploy do nosso sistema;
+ - **Events**: É uma atividade em particular que "dispara" um Workflow. Pode ser um push, uma PR ou até mesmo uma nova issue;
+ - **Jobs**: Job é a etapa que compoem um Workflow. Eles são executas em um mesmo Runner;
+ - **Action**: ;
+ - **Runner**: É a máquina responsável por executar o workflow e as actions e nos prover o feedback do nosso processo. O Runner pode ser o GitHub-hosted, provido pelo próprio time ou self-hosted runner, onde você é responsável por gerenciar o servidor e os serviços instalados nele;
 
 ### Principais features da plataforma:
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Nos próximos tópicos vamos listar algumas features interessantes da plataforma.
 
 ### Variáveis em Workflows
 
