@@ -8,34 +8,47 @@ Outro ponto é a capacidade de usar os próprios agentes do GitHub, eliminando a
 
 ## GitHub Actions: O que é?
 
-GitHub Actions é uma popular plataforma de integração contínua e entrega contínua (CI/CD). Com isso, desenvolvedores podem programar tarefas repetitivas enquanto reduzem a intervenção manual.
+***GitHub Actions*** é uma plataforma de integração contínua e entrega contínua (CI/CD), com isso você é capaz de automatizar e executar fluxos de desenvolvimento diretamente do GitHub, enquanto reduz a intervenção manual.
 
-GitHub Actions é montada em cima de um arquivo YAML, descrevendo assim diferentes etapas do workflow. Estas etapas (steps) incluem rodar um script, testar, fazer um deploy ou mandar notificações.
+Embora amplamente conhecido como uma ferramenta de DevOps, o ***GitHub Actions*** vai muito além disso. A plataforma permite você personalize e execute diversos outros fluxos quando outros eventos ocorrem no repositório. Por exemplo, é possível realizar um procedimento automatizado para incluir as etiquetas adequadas toda vez que alguém gera uma nova ***Issue*** no repositório.
+
+GitHub Actions funciona com inúmeras linguagens e frameworks e é configurado via YAML, garantindo assim que você possa compartilhá-los facilmente.
 
 ### Componentes do GitHub Actions
+![alt text](./img/github-actions-components.png)
 Como trata-se de uma plataforma de CI/CD, a mesma é formada por alguns componentes descritos na documentação, sendo eles:
 
  - **Workflow**: É onde vamos descrever todo o processo de automação para podermos compilar, testar e fazer deploy do nosso sistema;
- - **Events**: É uma atividade em particular que "dispara" um Workflow. Pode ser um push, uma PR ou até mesmo uma nova issue;
- - **Jobs**: Job é a etapa que compoem um Workflow. Eles são executas em um mesmo Runner;
- - **Action**: ;
- - **Runner**: É a máquina responsável por executar o workflow e as actions e nos prover o feedback do nosso processo. O Runner pode ser o GitHub-hosted, provido pelo próprio time ou self-hosted runner, onde você é responsável por gerenciar o servidor e os serviços instalados nele;
+ - **Events**: É uma atividade em particular que desencadeia um Workflow. Pode ser um push, uma PR ou até mesmo uma nova issue;
+ - **Jobs**: Job é a etapa que compõem um Workflow. Eles são executadas em um mesmo Runner;
+ - **Action**:  É um comando personalizado de como executar uma tarefa complexa, mas frequentemente repetitiva, automatizando assim um fluxo de trabalho;
+ - **Runner**: É a máquina responsável por executar o workflow e as actions e nos prover o feedback do nosso processo. Os runners podem ser hospedados pelo GitHub (runners hospedados) ou configurados e mantidos por você (runners auto-hospedados);
 
-### Principais features da plataforma:
+### Features que precisamos da plataforma:
 
-Nos próximos tópicos vamos listar algumas features interessantes da plataforma.
+Nos próximos tópicos vamos listar algumas features que são essenciais para automação do fluxo de integração e entrega contínua, presente no GitHub Actions.
 
 ### Variáveis em Workflows
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Existem variáveis de ambiente padrões do GitHub, que são lidas automaticamente em cada WorkFlow. Um exemplo disto é a variável GITHUB_TOKEN, que trata-se de um token de acesso de autenticação de curta duração que permite que o workflow interaja com o repositório atual e outros repositórios no GitHub durante a execução (checkouts, criar issues, pushes, etc).
+
+No entanto também é possível personalizar variáveis ambiente diretamente nos arquivos YAML.
+
+![Definindo variáveis de ambiente em um workflow](./img/variable-in-workflows.png)
 
 ### Adição de Scripts ao Workflow
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+GitHub Actions permitem a adição de scripts ao fluxo de trabalho. Você pode empregar ações para executar scripts e comandos shell.
+![Rodando npm install em um job](./img/script-github-actions.png)
 
 ### Compartilhando informações entre Jobs
 
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Outra feature que pode facilitar muito o processo de automação encotrada em outras plataformas, a possibilidade de compartilhar artefatos entre jobs diferentes, também encontra-se presente por aqui:
+
+![Preservando dado entre jobs](./img/sharing-data-jobs.png)
+
+Na imagem acima, este job do GitHub Actions calcula a expressão matemática 1+1, armazena o resultado no arquivo output.log e, em seguida, faz o upload deste arquivo como um artefato do workflow
+________________________________
 
 ### Criando nossa primeira pipeline no GitHub Actions
 
