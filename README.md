@@ -24,7 +24,7 @@ Como trata-se de uma plataforma de CI/CD, a mesma é formada por alguns componen
  - **Action**:  É um comando personalizado de como executar uma tarefa complexa, mas frequentemente repetitiva, automatizando assim um fluxo de trabalho;
  - **Runner**: É a máquina responsável por executar o workflow e as actions e nos prover o feedback do nosso processo. Os runners podem ser hospedados pelo GitHub (runners hospedados) ou configurados e mantidos por você (runners auto-hospedados);
 
-### Features que precisamos da plataforma:
+### Algumas features (essencias) contidas da plataforma:
 
 Nos próximos tópicos vamos listar algumas features que são essenciais para automação do fluxo de integração e entrega contínua, presente no GitHub Actions.
 
@@ -43,28 +43,32 @@ GitHub Actions permitem a adição de scripts ao fluxo de trabalho. Você pode e
 
 ### Compartilhando informações entre Jobs
 
-Outra feature que pode facilitar muito o processo de automação encotrada em outras plataformas, a possibilidade de compartilhar artefatos entre jobs diferentes, também encontra-se presente por aqui:
+Outra feature que pode facilitar muito o processo de automação encontrada em outras plataformas, a possibilidade de compartilhar artefatos entre jobs diferentes, também encontra-se presente por aqui:
 
 ![Preservando dado entre jobs](./img/sharing-data-jobs.png)
 
 Na imagem acima, este job do GitHub Actions calcula a expressão matemática 1+1, armazena o resultado no arquivo output.log e, em seguida, faz o upload deste arquivo como um artefato do workflow
 ________________________________
 
-### Criando nossa primeira pipeline no GitHub Actions
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-
-### Iniciando configurações
-
-### Rodando os arquivos
-
-________
-### Repositórios Relacionados
+### Dos Projetos desenvolvidos para Testes
 
 Dois mini projetos foram criados para simular o fluxo de desenvolvimento e testar o uso das actions:
 
  - [Frontend Angular](https://github.com/biduco07/IFMT-Devops-AOMS);
  - [Backend NestJs](https://github.com/tonkunz/ifmt-articles-api);
+
+<!-- ### Criando nossa primeira pipeline no GitHub Actions
+
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+
+### Iniciando configurações
+
+### Rodando os arquivos -->
+
+________
+### Repositórios Relacionados
+
+
 
 ### Ferramentas Utilizadas
 
