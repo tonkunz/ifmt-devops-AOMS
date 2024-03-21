@@ -24,7 +24,7 @@ Como trata-se de uma plataforma de CI/CD, a mesma é formada por alguns componen
  - **Action**:  É um comando personalizado de como executar uma tarefa complexa, mas frequentemente repetitiva, automatizando assim um fluxo de trabalho;
  - **Runner**: É a máquina responsável por executar o workflow e as actions e nos prover o feedback do nosso processo. Os runners podem ser hospedados pelo GitHub (runners hospedados) ou configurados e mantidos por você (runners auto-hospedados);
 
-### Algumas features (essencias) contidas da plataforma:
+### Algumas features (essenciais) contidas da plataforma:
 
 Nos próximos tópicos vamos listar algumas features que são essenciais para automação do fluxo de integração e entrega contínua, presente no GitHub Actions.
 
@@ -39,6 +39,7 @@ No entanto também é possível personalizar variáveis ambiente diretamente nos
 ### Adição de Scripts ao Workflow
 
 GitHub Actions permitem a adição de scripts ao fluxo de trabalho. Você pode empregar ações para executar scripts e comandos shell.
+
 ![Rodando npm install em um job](./img/script-github-actions.png)
 
 ### Compartilhando informações entre Jobs
@@ -54,21 +55,10 @@ ________________________________
 
 Dois mini projetos foram criados para simular o fluxo de desenvolvimento e testar o uso das actions:
 
- - [Frontend Angular](https://github.com/biduco07/IFMT-Devops-AOMS);
- - [Backend NestJs](https://github.com/tonkunz/ifmt-articles-api);
-
-<!-- ### Criando nossa primeira pipeline no GitHub Actions
-
-Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-
-### Iniciando configurações
-
-### Rodando os arquivos -->
+ - [Frontend Angular](https://github.com/biduco07/IFMT-Devops-AOMS): Um Frontend Angular com o deploy feito na ferramenta GitHub Pages;
+ - [Backend NestJs](https://github.com/tonkunz/ifmt-articles-api): Uma API em NestJS com um banco de dados Postgres. O deploy da API foi feito no Heroku enquanto a base de dados estava em outro ambiente na nuvem, o Railway;
 
 ________
-### Repositórios Relacionados
-
-
 
 ### Ferramentas Utilizadas
 
